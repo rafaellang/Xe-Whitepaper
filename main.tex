@@ -1,0 +1,62 @@
+\RequirePackage{lineno}\newdimen\linenumbersep\linenumbersep=2pt\renewcommand{\linenumberfont}{\tiny\color{blue}}
+\documentclass[aps,amsmath,amssymb,floatfix,preprintnumbers,rmp,showkeys,superscriptaddress,twocolumn]{revtex4-2} 
+\usepackage{array, amsmath, amssymb, booktabs, color, eurosym, graphicx, longtable, pbox, siunitx, url, verbatim}
+\usepackage[colorlinks=true,citecolor=blue,filecolor=blue,linkcolor=blue,urlcolor=blue,pdftex]{hyperref}
+
+\sloppy
+
+\newcommand{\1}[1]{\, \mathrm{#1}} % unit(y ;-)
+\newcommand{\n}[1]{\mathrm{#1}}    % normal (roman) text in math mode
+\newcommand{\nubb}{$\mathrm{0\nu\beta\beta}$}
+\newcommand{\dd}{\, \mathrm{d}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\percent}{\%}
+\newcommand{\infinity}{\infty}
+\newcommand{\lk}{\left(} \newcommand{\rk}{\right )}
+\newcommand{\order}{\mathcal{O}}
+\newcommand{\degree}{{}^{\circ}}
+\newcommand{\solar}{\odot}
+\newcommand{\earth}{\oplus}
+\newcommand{\tonneyear}{\ensuremath{\mathrm{t}\times\mathrm{y}}}
+
+\newcommand{\todo}[1]{\color{red}\textbf{$\lceil$#1$\rfloor$}\color{black}}
+\newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
+
+
+\begin{document}
+
+\title{A Next-Generation Liquid Xenon Observatory for Dark Matter \\and Neutrino Physics}
+
+\input{authorlist}
+\begin{abstract}
+The nature of dark matter and properties of neutrinos are most pressing issues in contemporary particle physics. The dual-phase xenon time-projection chamber is the leading technology to cover the available parameter space for Weakly Interacting Massive Particles (WIMPs) while featuring extensive sensitivity to many alternative dark matter candidates as well. The same detectors can study neutrinos through a variety of astrophysical sources and through neutrinoless double-beta decay. A next-generation xenon-based detector will therefore be a true multi-purpose machine to significantly advance particle physics, astrophysics, nuclear physics, and cosmology. This review article presents the science cases for such a detector.
+\end{abstract}
+
+\keywords{Dark Matter, Neutrinoless Double-Beta Decay, Neutrinos, Supernova, Direct Detection, Astroparticle Physics, Xenon}
+
+\maketitle
+
+%\phantom{LatexCanBeAnnoying}\clearpage\newpage
+\tableofcontents
+\linenumbers
+
+%\clearpage\newpage
+
+\input{sec_introduction.tex}
+\input{sec_wimps.tex}
+\input{sec_broaderdarkmatter.tex}
+\input{sec_doublebeta.tex}
+\input{sec_neutrinos.tex}
+\input{sec_bsm.tex}
+\input{sec_background.tex}
+\input{sec_complementarity.tex}
+\input{sec_priority.tex}
+\input{sec_summary.tex}
+\input{sec_acknowledgements.tex}
+
+\bibliographystyle{apsrev}
+\bibliography{bibliography}
+
+\end{document}
+
+
